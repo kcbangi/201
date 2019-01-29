@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+
+<html>
+
+    <head>
+        <title>Hello World!</title>
+    </head>
+
+    <body>
+
+        <h1>Hello Code 201</h1>
+
+        <script>
+            var name = prompt('Hello! What is your name?');
+            console.log(name);
+
+            var answer = prompt('Welcome ' + name + ', Type YES if you want to take a quick survey or NO to exit.').toLocaleLowerCase() .toLocaleUpperCase();
+            console.log('Survey')
+            if(answer ==='YES') {   
+                alert('Lets get started.');
+            } else {
+                alert('Lets take the survey anyways.');
+            }
+           
+            var qOne = prompt('Where are you from ' + name +'?').toLocaleLowerCase() .toLocaleUpperCase();;
+            console.log('Birthplace')
+            if(qOne === 'Washington') {
+                alert('Thats great, its an awesome place to live!.');
+            } else {
+                alert('Interesting! it sounds like an awesome place to live!');
+            }
+
+            var qTwo = prompt('How old are you?');
+            console.log('Age');
+            if ( qTwo > 21 ) {
+            alert('Congratulation on still breathing :)');
+            } else {
+            alert('You have no idea what is coming.');
+            }
+
+            var qThree = prompt('From 1-10, how would you rate your current situation in life?');
+            console.log('Rating life');
+            if(qThree > 5) {
+                alert('Keep it up and be proud.')
+            } else {
+                alert('Good news! You can still change your life even though it seems imposible.');
+            }
+            alert('Greetings ' + name + ' from ' + qOne + ', based of your age being ' + qTwo + ' and your life assesment being a ' + qThree + ', I encourage you to be proud of yourself! The fact that you are sitting here taking this survey is a huge accomplishment, since you had to survive lifes up and downs in order to reach this point.');
+
+        </script>
+
+    </body>
+
+</html>
